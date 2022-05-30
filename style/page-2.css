@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  font-size: 1.3rem;
+  line-height: 100px;
+  font-weight: 100;
+  color: black;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav {
+  width: 100%;
+  height: 5vh;
+  background-color: #2541b2;
+}
+
+.header {
+  width: 100%;
+  height: 22.5vh;
+  background-color: #1768ac;
+}
+
+.content {
+  height: 50vh;
+  background-color: gainsboro;
+}
+.feature {
+  height: 22.5vh;
+}
+
+.sign-up {
+  background-color: #ddf0ff;
+}
+
+.feat-1 {
+  background-color: coral;
+}
+
+.feat-2 {
+  background-color: #ce5374;
+}
+
+.feat-3 {
+  background-color: #dbbbf5;
+}
+
+@media screen and (min-width: 738px) and (max-width: 993px) {
+  .features {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .content {
+    height: 75vh;
+  }
+  .sign-up {
+    height: 35vh;
+    width: 50%;
+  }
+  .feature {
+    height: 35vh;
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .sign-up {
+    height: 15vh;
+    order: 3;
+    width: 100%;
+  }
+  .features {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .feature {
+    height: 60vh;
+    width: 33.3%;
+  }
+  .content {
+    order: 1;
+  }
+}
